@@ -1,0 +1,44 @@
+:root {
+    --background-color: #000;
+    --text-color: #fff;
+    --nav-button-color: #171A1F;
+    --purple: #743093;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Montserrat Alternates", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Kurale", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 96px;
+}
+
+h2 {
+    font-family: "Kurale", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+button {
+    font-size: 18px;
+}
+
+p {
+    font-size: 14px;
+}
