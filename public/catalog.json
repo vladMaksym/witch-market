@@ -5,7 +5,7 @@
     "description": "Кришталева куля з можливістю ворожіння",
     "price": "$250",
     "image": "/image20.png",
-    "inBasket": true
+    "inBasket": false
   },
   {
     "id": 2,
@@ -36,6 +36,7 @@
     "name": "Зілля молодості",
     "description": "Зілля вічної молодості та бадьорості",
     "price": "$200",
+    "oldPrice": "$500",
     "image": "/image24.png",
     "inBasket": false
   },
@@ -44,7 +45,6 @@
     "name": "Кільце захисту",
     "description": "Кільце захисту від темних сил",
     "price": "$180",
-    "oldPrice": "$500",
     "image": "/image25.png",
     "inBasket": false
   },
@@ -69,7 +69,7 @@
     "name": "Чорний свічник",
     "description": "Використовується для темних ритуалів.",
     "price": "$400",
-    "image": "/image28.png",
+    "image": "/image20.png",
     "inBasket": false
   },
   {
@@ -77,7 +77,55 @@
     "name": "Перстень некроманта",
     "description": "Дозволяє викликати духів.",
     "price": "$2200",
-    "image": "/image29.png",
+    "image": "/image24.png",
+    "inBasket": false
+  },
+  {
+    "id": 11,
+    "name": "Магічний компас",
+    "description": "Вказує шлях до таємних місць",
+    "price": "$450",
+    "image": "/image21.png",
+    "inBasket": false
+  },
+  {
+    "id": 12,
+    "name": "Амулет вогню",
+    "description": "Амулет, що дає силу вогню",
+    "price": "$300",
+    "image": "/image21.png",
+    "inBasket": false
+  },
+  {
+    "id": 13,
+    "name": "Книга магії",
+    "description": "Містить давні магічні ритуали",
+    "price": "$350",
+    "image": "/image25.png",
+    "inBasket": false
+  },
+  {
+    "id": 14,
+    "name": "Зілля темряви",
+    "description": "Зілля, яке дає здатність маніпулювати темрявою",
+    "price": "$500",
+    "image": "/image27.png",
+    "inBasket": false
+  },
+  {
+    "id": 15,
+    "name": "Грімовий меч",
+    "description": "Меч, що викликає грім при кожному ударі",
+    "price": "$700",
+    "image": "/image23.png",
+    "inBasket": false
+  },
+  {
+    "id": 16,
+    "name": "Ключ від порталу",
+    "description": "Ключ, що відкриває магічні портали",
+    "price": "$600",
+    "image": "/image24.png",
     "inBasket": false
   }
 ]

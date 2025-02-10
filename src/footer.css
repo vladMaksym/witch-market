@@ -1,0 +1,49 @@
+#contact {
+    display: flex;
+    margin: 50px;
+    justify-content: space-between;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+}
+
+#contact h2{
+    line-height: 88%;
+}
+
+.footer-info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-info p {
+    font-size: 14px;
+    line-height: 186%;
+    color: #6E7787;
+}
+
+.footer-info h3 {
+    line-height: 167%;
+    color: #F3F4F6;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-copyright {
+    text-align: center;
+    color: #6E7787;
+}
+
+.cat {
+    position: absolute;
+    left: 359px;
+    top: 3618px;
+}

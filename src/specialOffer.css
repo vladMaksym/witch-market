@@ -24,6 +24,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .offer-details-2 {
@@ -31,7 +32,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    
+    justify-content: space-around;
 }
 
 .offer-name {
@@ -40,61 +41,73 @@
     font-size: 40px;
     line-height: 120%;
     color: #171A1F;
+    align-self: flex-end;
 }
 
 .old-price {
     text-decoration: line-through;
-    color: gray;
+    font-size: 40px;
+    line-height: 110%;
+    color: #6E7787;
 }
 
 .new-price {
-    color: purple;
-    font-size: 22px;
-    font-weight: bold;
+    color: var(--purple);
+    font-size: 40px;
+    line-height: 110%;
 }
 
-.offer-image {
-    width: 150px;
-    height: auto;
-    border-radius: 10px;
+.countdown-text {
+    display: flex;
+    align-items: center;
+    color: #9095A0;
 }
 
 .countdown {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 40px;
+    line-height: 120%;
+    color: #171A1F;
+    margin-top: 23px;
 }
 
 .basket-btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-.basket-btn.add {
-    background-color: purple;
-    color: white;
-}
-
-.basket-btn.remove {
-    background-color: red;
-    color: white;
-}
-
-.offer-promotions {
+    width: 152px;
+    height: 82px;
+    color: var(--purple);
+    border: 2px solid var(--purple);
+    border-radius: 10px;
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.promo-card {
-    background: black;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    width: 30%;
-    text-align: center;
-    font-size: 14px;
+.offers-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 50px;
+}
+
+.offer-item {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 10px;
+    width: 375px;
+}
+
+.offer-item h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.offer-item p {
+    line-height: 143%;
+    color: #F3F4F6;
+}
+
+.offer-item p.grey {
+    color: #9095A0;
 }

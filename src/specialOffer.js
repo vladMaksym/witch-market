@@ -68,23 +68,46 @@ function Offer({ itemId, updateBasket }) {
             <div className="offer-content">
                 
                 <div className="offer-details">
-                    <h2 className="offer-name">{item.name}</h2>
-                    <p className="old-price">{item.oldPrice}</p>
-                    <p className="new-price">{item.price}</p>
+                    <h3 className="offer-name">{item.name}</h3>
+                    <div>
+                        <p className="old-price">{item.oldPrice}</p>
+                        <p className="new-price">{item.price}</p>
+                    </div>
                 </div>
                 
-                <img src={process.env.PUBLIC_URL + "/" + item.image} alt={item.name} />
+                <img className='offer-conten-img' src={process.env.PUBLIC_URL + "/" + item.image} alt={item.name} />
 
                 <div className="offer-details-2">
-                    <p>До кінця акції:</p>
-                    <div className="countdown">До кінця акції: {formatTime(timeLeft)}</div>
+                    <div>
+                        <h3 className='countdown-text'>До кінця акції:</h3>
+                        <div className="countdown">{formatTime(timeLeft)}</div>
+                    </div>
+
                     {item.inBasket ? (
-                        <button className="basket-btn remove" onClick={handleRemoveFromBasket}>Видалити з кошика</button>
+                        <button className="basket-btn" onClick={handleRemoveFromBasket}>Видалити з кошика</button>
                     ) : (
-                        <button className="basket-btn add" onClick={handleBuy}>Додати до кошика</button>
+                        <button className="basket-btn" onClick={handleBuy}><div>Додати до</div><div><img src={process.env.PUBLIC_URL + "/" + "purple-cart.svg"} /> кошика</div></button>
                     )}
                 </div>
 
+            </div>
+                            
+            <div className='offers-list'>
+                <div className='offer-item'>
+                    <h3>Зілля місяця</h3>
+                    <p>Купуйте обране зілля зі знижкою 20%!</p>
+                    <p className='grey'>Діє до кінця місяця</p>
+                </div>
+                <div className='offer-item'>
+                    <h3>Передбачення за пів ціни</h3>
+                    <p>Отримайте пророцтво зі знижкою 50%!</p>
+                    <p className='grey'>Діє до неділі</p>
+                </div>
+                <div className='offer-item'>
+                    <h3>Ніч чаклунських знижок</h3>
+                    <p>Лише сьогодні опівночі знижки до 30% на все!</p>
+                    <p className='grey'>Діє до світанку</p>
+                </div>
             </div>
         </section>
     );
