@@ -1,52 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kurale&family=Montserrat+Alternates:wght@400;700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Wet+Paint&family=Smythe&display=swap');
-@import url('colors.css');
+@import url('base.css');
 @import url('header.css');
+@import url('hero.css');
+@import url('catalog.css');
+@import url('vendors.css');
+@import url('reviews.css');
+@import url('specialOffer.css');
 @import url('adaptive.css');
-
-.kurale-regular {
-    font-family: "Kurale", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.montserrat-alternates-bold {
-    font-family: "Montserrat Alternates", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-#hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    background: linear-gradient(rgba(23, 26, 31, 0.69), rgba(23, 26, 31, 0.69)), url(witch-market-bg.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-h1 {
-    margin: 368px 0 0 132px;
-    line-height: 84px;
-}
-
-#hero h3 {
-    width: 1170px;
-    margin-left: 135px;
-    line-height: 30px;
-}
-
-#hero button {
-    width: 177px;
-    height: 44px;    
-    border: 2px solid var(--text-color);
-    border-radius: 10px;
-    margin-left: 132px;
-    transition: background-color 1s ease, border 1s ease, box-shadow 1s ease;
-}
-
-#hero button:hover {
-    background-color: var(--purple);
-    border: 2px solid var(--purple);
-    box-shadow: 0px 0px 4px var(--purple);
-}
