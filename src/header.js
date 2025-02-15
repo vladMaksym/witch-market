@@ -30,7 +30,6 @@ function Header() {
             <img src={`${process.env.PUBLIC_URL}/logo.svg`} alt="Logo" />
             <a href="#header"><p className="logo-text">Witch Market</p></a>
 
-            {/* Hamburger icon */}
             <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
                 <div className="line"></div>
                 <div className="line"></div>

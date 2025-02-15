@@ -72,6 +72,11 @@
     gap: 40px;
 }
 
+.review-itmes {
+    display: flex;
+    gap: 40px;
+}
+
 .review-item {
     display: flex;
     flex-direction: column;

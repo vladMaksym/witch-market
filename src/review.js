@@ -138,9 +138,10 @@ const Reviews = () => {
 
         </form>
           
-        <button onClick={goToPrevious}><img src={`${process.env.PUBLIC_URL}/Button7.svg`} /></button>
 
         <div className="reviews-carousel">
+          <button onClick={goToPrevious}><img src={`${process.env.PUBLIC_URL}/Button7.svg`} /></button>
+          <div className='review-itmes'>
           {reviews.slice(currentIndex, currentIndex + 2).map((review, index) => (
             <div key={index} className="review-item">
 
@@ -177,9 +178,12 @@ const Reviews = () => {
               
             </div>
           ))}
+          </div>
+
+          <button onClick={goToNext}><img src={`${process.env.PUBLIC_URL}/Button6.svg`} /></button>
+
         </div>
 
-        <button onClick={goToNext}><img src={`${process.env.PUBLIC_URL}/Button6.svg`} /></button>
 
       </div>
 
