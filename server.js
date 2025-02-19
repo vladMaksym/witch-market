@@ -46,4 +46,4 @@ app.get('/basket', (req, res) => {
   res.json(basketItems);
 });
 
-app.listen(5000, () => console.log('Сервер працює на порту 5000'));
+app.listen(5001, () => console.log('Сервер працює на порту 5001'));

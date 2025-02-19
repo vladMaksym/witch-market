@@ -141,7 +141,7 @@ const Reviews = () => {
           
 
         <div className="reviews-carousel">
-          <button onClick={goToPrevious}><img src={`${process.env.PUBLIC_URL}/Button7.svg`} /></button>
+          <button onClick={goToPrevious} disabled={currentIndex === 0}><img src={`${process.env.PUBLIC_URL}/Button7.svg`} /></button>
           <div className='review-itmes'>
             <AnimatePresence mode="wait">
               {reviews.slice(currentIndex, currentIndex + 2).map((review, index) => (
@@ -190,7 +190,7 @@ const Reviews = () => {
             </AnimatePresence>
           </div>
 
-          <button onClick={goToNext}><img src={`${process.env.PUBLIC_URL}/Button6.svg`} /></button>
+          <button onClick={goToNext} disabled={currentIndex + 2 >= reviews.length}><img src={`${process.env.PUBLIC_URL}/Button6.svg`} /></button>
 
         </div>
 

@@ -27,14 +27,6 @@
         line-height: 30px;
     }
 
-    #hero button {
-        width: 177px;
-        height: 44px;
-        border: 2px solid var(--text-color);
-        border-radius: 10px;
-        transition: background-color 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
-    }
-
     .logo {
         margin-left: 15px;
         margin-bottom: 10px;
@@ -74,12 +66,8 @@
 
     .item {
         height: auto;
-        width: 150px;
-        border-radius: 2px;
-    }
-
-    .scroll-button {
-        width: 25px;
+        width: 190px;
+        border-radius: 4px;
     }
 
     .vendors-grid {
@@ -96,10 +84,6 @@
     }
 
     .reviews-line {
-                flex-direction: column;
-    }
-
-    .review-itmes {
         flex-direction: column;
     }
 
@@ -131,6 +115,10 @@
         font-size: 32px;
     }
 
+    .countdown-text {
+        font-size: 18px;
+    }
+
     .offer-name {
         height: auto;
         align-self: center;
@@ -144,6 +132,32 @@
         margin: 0 20px 50px 20px; 
     }
 
+    .footer-container {
+        width: 70%;
+    }
+
+    .cat {
+        transform: translateX(80px);
+        width: 270px;
+        height: 142px;
+    }
+}
+
+@media (max-width: 1010px) {
+    .item {
+        height: auto;
+        width: 150px;
+        border-radius: 2px;
+    }    
+    
+    .scroll-button {
+        width: 25px;
+    }
+
+    .review-itmes {
+        flex-direction: column;
+    }    
+    
     #contact {
         flex-direction: column;
     }
@@ -155,9 +169,15 @@
     .footer-copyright-adaptive{
         display: flex;
     }
-    
+
+    .footer-container {
+        width: auto;
+    }
+
     .cat {
-        top: 4318px;
+        height: 200px;
+        width: auto;
+        transform: translateX(150px) translateY(-30px);
     }
 
     .map {
@@ -187,6 +207,10 @@
         font-size: 12px;
     }
 
+    #hero{
+        gap: 30px;
+    }
+
     #hero h3 {
         font-size: 14px;
     }
@@ -200,11 +224,7 @@
     }
 
     h1 {
-        margin: 318px 0 0 40px;
-    }
-
-    #hero{
-        gap: 30px;
+        margin-left: 40px;
     }
 
     #hero h3 {
@@ -296,7 +316,7 @@
 
     h1{
         font-size: 46px;
-        margin: 25vh 0 0 9%;
+        margin-left: 9%;
     }
 
     h2 {

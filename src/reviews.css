@@ -72,6 +72,10 @@
     gap: 40px;
 }
 
+.reviews-carousel button:disabled {
+    filter: brightness(0) saturate(0) invert(0);
+}
+
 .review-itmes {
     display: flex;
     gap: 40px;

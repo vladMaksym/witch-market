@@ -38,7 +38,7 @@ function Footer() {
 
             </div>
 
-            <div>
+            <div className='map-container'>
                 <img className='map' src={process.env.PUBLIC_URL + "/" + "map.png"} />
                 <p className="footer-copyright-adaptive">© 2025 Відьомський ринок. Усі права захищені.</p>
             </div>

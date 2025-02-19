@@ -62,7 +62,7 @@
     "description": "Черевики для легких подорожей",
     "price": "$300",
     "image": "/image27.png",
-    "inBasket": true
+    "inBasket": false
   },
   {
     "id": 9,
@@ -126,6 +126,6 @@
     "description": "Ключ, що відкриває магічні портали",
     "price": "$600",
     "image": "/image35.png",
-    "inBasket": false
+    "inBasket": true
   }
 ]
