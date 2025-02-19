@@ -85,6 +85,7 @@
     width: 239px;
     height: auto;
     font-size: 11px;
+    margin: 10px 0;
 }
 
 .vendor-card.expanded button {

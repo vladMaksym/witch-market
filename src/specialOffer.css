@@ -82,6 +82,16 @@
     justify-content: space-evenly;
 }
 
+.basket-btn:hover {
+    background: var(--purple);
+    color: white;
+    fill: white;
+}
+
+.basket-btn:hover img {
+    filter: brightness(0) saturate(100%) invert(100%);
+}
+
 .offers-list {
     display: flex;
     justify-content: center;

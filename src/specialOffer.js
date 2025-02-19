@@ -4,7 +4,7 @@ function Offer({ itemId, updateBasket }) {
     const [item, setItem] = useState(null);
     const [timeLeft, setTimeLeft] = useState(0);
     
-    const targetDate = new Date('2025-02-17T00:00:00').getTime();
+    const targetDate = new Date('2025-02-27T00:00:00').getTime();
 
     useEffect(() => {
         fetch(process.env.PUBLIC_URL + '/catalog.json')
@@ -33,7 +33,7 @@ function Offer({ itemId, updateBasket }) {
     };
 
     const handleBuy = () => {
-        fetch('http://localhost:5000/buy', {
+        fetch('http://localhost:5001/buy', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ id: itemId }),
@@ -47,7 +47,7 @@ function Offer({ itemId, updateBasket }) {
     };
 
     const handleRemoveFromBasket = () => {
-        fetch('http://localhost:5000/remove', {
+        fetch('http://localhost:5001/remove', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ id: itemId }),

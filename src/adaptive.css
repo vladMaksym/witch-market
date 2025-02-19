@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
     h1 {
         font-size: 64px;
     }
@@ -11,22 +11,19 @@
         font-size: 12px;
     }
 
-    button {
-        font-size: 14px;
+    #hero h3 {
+        font-size: 18px;
     }
 
     p {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     h1 {
-    margin: 368px 0 0 62px;
-    line-height: 84px;
+        line-height: 84px;
     }
 
     #hero h3 {
-        width: 570px;
-        margin-left: 65px;
         line-height: 30px;
     }
 
@@ -35,7 +32,6 @@
         height: 44px;
         border: 2px solid var(--text-color);
         border-radius: 10px;
-        margin-left: 62px;
         transition: background-color 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
     }
 
@@ -51,12 +47,12 @@
 
     .nav {
         display: none;
-        width: 100%;
         position: absolute;
         top: 92px;
-        left: 0;
+        right: 0;
         background: rgba(0, 0, 0, 0.9);
-        padding: 10px 0;
+        padding: 10px;
+        border-radius: 10px;
     }
 
     .nav.open {
@@ -66,22 +62,24 @@
     #header ul {
         flex-direction: column;
         width: 100%;
-        gap: 10px;
     }
 
     #header ul li {
         width: 100%;
-        padding: 14px 0;
-        text-align: center;
     }
 
     .hamburger {
         display: flex;
-        margin-left: 50%;
     }
 
     .item {
         height: auto;
+        width: 150px;
+        border-radius: 2px;
+    }
+
+    .scroll-button {
+        width: 25px;
     }
 
     .vendors-grid {
@@ -133,6 +131,11 @@
         font-size: 32px;
     }
 
+    .offer-name {
+        height: auto;
+        align-self: center;
+    }
+
     .offer-conten-img {
         align-self: center;    
     }
@@ -145,15 +148,26 @@
         flex-direction: column;
     }
 
+    .footer-copyright {
+        display: none;
+    }
+
+    .footer-copyright-adaptive{
+        display: flex;
+    }
+    
     .cat {
         top: 4318px;
     }
+
+    .map {
+        margin: 50px 0;
+    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 740px) {
     .header nav ul {
         display: block;
-        margin-top: 20px;
     }
 
     .header nav ul li {
@@ -162,33 +176,39 @@
 
     h1 {
         font-size: 56px;
-        line-height: normal;
+        line-height: 56px;
     }
 
     h2 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     h3 {
-        font-size: 10px;
-    }
-
-    button {
-        font-size: 10px;
-    }
-
-    p {
-        font-size: 8px;
-    }
-
-    h1 {
-        margin: 318px 0 0 52px;
-        line-height: 84px;
+        font-size: 12px;
     }
 
     #hero h3 {
-        width: 350px;
-        margin-left: 55px;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 11px;
+    }
+
+    h1 {
+        margin: 318px 0 0 40px;
+    }
+
+    #hero{
+        gap: 30px;
+    }
+
+    #hero h3 {
+        margin-left: 40px;
         line-height: 30px;
     }
 
@@ -197,12 +217,8 @@
         height: 44px;
         border: 2px solid var(--text-color);
         border-radius: 10px;
-        margin-left: 52px;
+        margin-left: 40px;
         transition: background-color 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
-    }
-
-    .hamburger {
-        margin-left: 15%;
     }
 
     .catalog {
@@ -214,6 +230,27 @@
         column-gap: 24px;
     }
 
+    #reviews h2 {
+        line-height: 100%;
+        margin-bottom: 30px;
+    }
+
+    .review-item {
+        width: 300px;
+    }
+    
+    .second-line {
+        width: auto;
+    }
+
+    .reviews-carousel {
+        gap: 10px;
+    }
+
+    .offer-content {
+        gap: 25px;
+    }
+
     .offer-name, 
     .old-price,
     .new-price,
@@ -221,12 +258,96 @@
         font-size: 24px;
     }
 
+    .offers-list {
+        flex-direction: column;
+    }
+
+    .offer-item {
+        width: auto;
+    }
+
     .basket-btn {
         width: 102px;
         height: 62px;
     }
 
+    .footer-container {
+        gap: 30px;
+    }
+
+    .h2-footer {
+        display: none;    
+    }
+
+    .h2-footer-adaptive {
+        display: block;
+    }
+
+    #contact h2 {
+        line-height: 100%;
+    }
+
     .cat {
         display: none;                
+    }
+}
+
+@media (max-width: 400px) {
+
+    h1{
+        font-size: 46px;
+        margin: 25vh 0 0 9%;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    #hero h3 {
+        margin-left: 9%;
+    }
+
+    #hero button {
+        margin-left: 9%;
+    }
+
+    .item {
+        width: 100px;
+        border-radius: 1px;
+    }
+
+    .item .text-container .description {
+        height: auto;
+    }
+
+    .vendor-card {
+        width: 280px;
+    }
+
+    .vendor-card .text {
+        width: 70%;
+    }
+
+    .vendor-card.expanded p {
+        width: auto;
+    }
+
+    .review-form {
+        width: 300px;
+    }
+
+    .review-item {
+        width: 240px;
+    }
+
+    .offer-name,
+    .old-price,
+    .new-price,
+    .countdown {
+        font-size: 18px;
     }
 }

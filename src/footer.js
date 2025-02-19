@@ -6,12 +6,16 @@ function Footer() {
 
             <div className="footer-container">
 
-                <h2>Магія завжди поруч.<br />Тільки повір</h2>
+                <h2 className='h2-footer'>Магія завжди поруч.<br />Тільки повір</h2>
+                <h2 className='h2-footer-adaptive'>Магія поруч.<br />Тільки повір</h2>
 
                 <div className="footer-info">
-                    <div>
-                        <p>📞 Телефон:</p>
-                        <h3>+380 (66) 666-13-13</h3>
+                    <div className='cat-container'>
+                        <div>
+                            <p>📞 Телефон:</p>
+                            <h3>+380 (66) 666-13-13</h3>
+                        </div>
+                        <img className='cat' src={process.env.PUBLIC_URL + "/" + "cat.png"} />
                     </div>
                     <div>
                         <p>📧 Email:</p>
@@ -34,8 +38,10 @@ function Footer() {
 
             </div>
 
-            <img src={process.env.PUBLIC_URL + "/" + "map.png"} />
-            <img className='cat' src={process.env.PUBLIC_URL + "/" + "cat.png"} />
+            <div>
+                <img className='map' src={process.env.PUBLIC_URL + "/" + "map.png"} />
+                <p className="footer-copyright-adaptive">© 2025 Відьомський ринок. Усі права захищені.</p>
+            </div>
         </footer>
     )
 }

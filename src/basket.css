@@ -1,20 +1,21 @@
 #basket-items {
-    position: fixed;
+    position: absolute;
     top: 92px;
-    right: 10px;
-    width: 250px;
-    background: #171A1F;
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    border-radius: 10px;
     z-index: 1000;
 }
 
 .basket-item {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 10px 0;
+    background: var(--nav-button-color);
+    border-radius: 10px;
+    padding: 14px 9px;
+    white-space: nowrap;
+    outline: 2px solid transparent;
 }
 
-.basket-item:last-child {
-    border-bottom: none;
+.basket-item h3 {
+    font-size: 18px;
 }

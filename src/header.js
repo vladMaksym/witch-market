@@ -27,8 +27,8 @@ function Header() {
 
     return (
         <header id="header" className={`header ${scrolled ? 'scrolled' : ''}`}>
-            <img src={`${process.env.PUBLIC_URL}/logo.svg`} alt="Logo" />
-            <a href="#header"><p className="logo-text">Witch Market</p></a>
+            <img className='logo' src={`${process.env.PUBLIC_URL}/logo.svg`} alt="Logo" />
+            <a className='logo-text-container' href="#hero"><p className="logo-text">Witch Market</p></a>
 
             <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
                 <div className="line"></div>

@@ -5,6 +5,23 @@
     --purple: #743093;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(142, 142, 142, 0.3);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(144, 144, 144, 0.5);
+}
+
 html {
     scroll-behavior: smooth;
 }

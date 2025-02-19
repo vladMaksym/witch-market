@@ -10,8 +10,12 @@
     gap: 88px;
 }
 
-#contact h2{
+.h2-footer {
     line-height: 88%;
+}
+
+.h2-footer-adaptive {
+    display: none;
 }
 
 .footer-info {
@@ -38,12 +42,29 @@
 }
 
 .footer-copyright {
+    font-size: 14px;
     text-align: center;
     color: #6E7787;
 }
 
+.footer-copyright-adaptive {
+    display: none;
+    font-size: 14px;
+    justify-content: center;
+    text-align: center;
+    color: #6E7787;
+}
+
+.cat-container {
+    display: flex;
+    height: 7vh;
+}
+
 .cat {
-    position: absolute;
-    left: 359px;
-    top: 3618px;
+    height: 200px;
+    transform: translateX(150px) translateY(-30px);
+}
+
+.map {
+    width: 100%;
 }

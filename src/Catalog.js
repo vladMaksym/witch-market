@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 function Catalog({ updateBasket }) {
   const [items, setItems] = useState([]);
@@ -24,9 +25,8 @@ function Catalog({ updateBasket }) {
     }
   };
 
-  // Додаємо товар у кошик
   const handleBuy = (itemId) => {
-    fetch('http://localhost:5000/buy', {
+    fetch('http://localhost:5001/buy', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ id: itemId }),
@@ -43,9 +43,8 @@ function Catalog({ updateBasket }) {
       .catch(error => console.error('Помилка оновлення каталогу:', error));
   };
 
-  // Видаляємо товар з кошика
   const handleRemoveFromBasket = (itemId) => {
-    fetch('http://localhost:5000/remove', {
+    fetch('http://localhost:5001/remove', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ id: itemId }),
@@ -66,24 +65,44 @@ function Catalog({ updateBasket }) {
     <section id="items">
       <h2>Магічні предмети</h2>
       <div className="catalog-container">
-        <button onClick={handlePrev} disabled={visibleIndex === 0}><img src={`${process.env.PUBLIC_URL}/Button7.svg`} /></button>
+        <button onClick={handlePrev} disabled={visibleIndex === 0}>
+          <img className="scroll-button" src={`${process.env.PUBLIC_URL}/Button7.svg`} alt="Попередня сторінка" />
+        </button>
         <div className="catalog">
-          {items.slice(visibleIndex, visibleIndex + pageSize).map((item) => (
-            <div key={item.id} className="item">
-              <img src={process.env.PUBLIC_URL + "/" + item.image} alt={item.name} />
-              <div className='text-container'>
-                <h3>{item.name}</h3>
-                <p className='description'>{item.description}</p>
-                <p className='price'>Ціна: {item.price}{item.inBasket ? (
-                <button onClick={() => handleRemoveFromBasket(item.id)}><img src={`${process.env.PUBLIC_URL}/deletecart.svg`} /></button>
-                ) : (
-                  <button onClick={() => handleBuy(item.id)}><img src={`${process.env.PUBLIC_URL}/smallcart.svg`} /></button>
-                )}</p>
-              </div>
-            </div>
-          ))}
+          <AnimatePresence mode="wait">
+            {items.slice(visibleIndex, visibleIndex + pageSize).map((item) => (
+              <motion.div
+                key={item.id}
+                className="item"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -50 }}
+                transition={{ duration: 0.5 }}
+              >
+                <img src={process.env.PUBLIC_URL + "/" + item.image} alt={item.name} />
+                <div className="text-container">
+                  <h3>{item.name}</h3>
+                  <p className="description">{item.description}</p>
+                  <p className="price">
+                    Ціна: {item.price}
+                    {item.inBasket ? (
+                      <button onClick={() => handleRemoveFromBasket(item.id)}>
+                        <img src={`${process.env.PUBLIC_URL}/deletecart.svg`} alt="Видалити з кошика" />
+                      </button>
+                    ) : (
+                      <button onClick={() => handleBuy(item.id)}>
+                        <img src={`${process.env.PUBLIC_URL}/smallcart.svg`} alt="Додати до кошика" />
+                      </button>
+                    )}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
-        <button onClick={handleNext} disabled={visibleIndex + pageSize >= items.length}><img src={`${process.env.PUBLIC_URL}/Button6.svg`} /></button>
+        <button onClick={handleNext} disabled={visibleIndex + pageSize >= items.length}>
+          <img className="scroll-button" src={`${process.env.PUBLIC_URL}/Button6.svg`} alt="Наступна сторінка" />
+        </button>
       </div>
     </section>
   );
