@@ -62,22 +62,22 @@
     "description": "Черевики для легких подорожей",
     "price": "$300",
     "image": "/image27.png",
-    "inBasket": true
+    "inBasket": false
   },
   {
     "id": 9,
     "name": "Чорний свічник",
     "description": "Використовується для темних ритуалів.",
     "price": "$400",
-    "image": "/image20.png",
+    "image": "/image28.png",
     "inBasket": false
   },
   {
     "id": 10,
-    "name": "Перстень некроманта",
+    "name": "Перстень мерців",
     "description": "Дозволяє викликати духів.",
     "price": "$2200",
-    "image": "/image24.png",
+    "image": "/image29.png",
     "inBasket": false
   },
   {
@@ -85,7 +85,7 @@
     "name": "Магічний компас",
     "description": "Вказує шлях до таємних місць",
     "price": "$450",
-    "image": "/image21.png",
+    "image": "/image30.png",
     "inBasket": false
   },
   {
@@ -93,7 +93,7 @@
     "name": "Амулет вогню",
     "description": "Амулет, що дає силу вогню",
     "price": "$300",
-    "image": "/image21.png",
+    "image": "/image31.png",
     "inBasket": false
   },
   {
@@ -101,15 +101,15 @@
     "name": "Книга магії",
     "description": "Містить давні магічні ритуали",
     "price": "$350",
-    "image": "/image25.png",
+    "image": "/image32.png",
     "inBasket": false
   },
   {
     "id": 14,
     "name": "Зілля темряви",
-    "description": "Зілля, яке дає здатність маніпулювати темрявою",
+    "description": "Зілля, яке дає здатність керувати темрявою",
     "price": "$500",
-    "image": "/image27.png",
+    "image": "/image33.png",
     "inBasket": false
   },
   {
@@ -117,7 +117,7 @@
     "name": "Грімовий меч",
     "description": "Меч, що викликає грім при кожному ударі",
     "price": "$700",
-    "image": "/image23.png",
+    "image": "/image34.png",
     "inBasket": false
   },
   {
@@ -125,7 +125,7 @@
     "name": "Ключ від порталу",
     "description": "Ключ, що відкриває магічні портали",
     "price": "$600",
-    "image": "/image24.png",
-    "inBasket": false
+    "image": "/image35.png",
+    "inBasket": true
   }
 ]
