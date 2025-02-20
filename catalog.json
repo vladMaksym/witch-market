@@ -13,7 +13,7 @@
     "description": "Паличка з бузини з серцевиною фенікс",
     "price": "$150",
     "image": "/image21.png",
-    "inBasket": false
+    "inBasket": true
   },
   {
     "id": 3,
